@@ -7,10 +7,13 @@
     - Uma vez validadas as informações, a API deve informar que está tudo ok e dar um retorno positivo ao usuário.
 
 ### Endpoint: 
-- /enderecos
+- /api/enderecos
 
 ### Método HTTP:
 - Post
+- Get
+- Update
+- Delete
   
 ### Descrição:
 Este endpoint cria um novo endereço com base nos parâmetros fornecidos.
@@ -55,6 +58,45 @@ A API possui um mecanismo robusto para lidar com erros e fornece respostas adequ
 ![alt text](https://s4.aconvert.com/convert/p3r68-cdx67/amz9x-azsmc.png)
 
 - É retornado um erro quando a solicitação e inválida ou parâmetros ausentes.
+
+Exemplo de solicitação:
+- POST /enderecos
+
+#### Exemplo de solicitação:
+
+![alt text](https://s4.aconvert.com/convert/p3r68-cdx67/a1kmm-f5eui.png)
+
+Formato de resposta:
+Cabeçalho HTTP:
+
+#### Corpo da resposta (JSON):
+
+![alt text](https://s4.aconvert.com/convert/p3r68-cdx67/alezq-u5lgw.png))
+
+#### Lidando com Erros
+
+A API possui um mecanismo robusto para lidar com erros e fornece respostas adequadas para diferentes cenários. A seguir estão os possíveis códigos de status que podem ser retornados em diferentes situações:
+
+#### Exemplo de Headers.
+
+![alt text](https://s4.aconvert.com/convert/p3r68-cdx67/ae496-poz8d.png)
+
+#### Corpo da solicitação.
+
+![alt text](https://s4.aconvert.com/convert/p3r68-cdx67/aonv8-e72do.png)
+
+- Resposta 201 Created: Este código de status é retornado quando uma solicitação de criação de recurso é bem-sucedida.
+
+#### Corpo da solicitação inválida:
+
+![alt text](https://s4.aconvert.com/convert/p3r68-cdx67/a808e-k7041.png)
+
+![alt text](https://s4.aconvert.com/convert/p3r68-cdx67/amz9x-azsmc.png)
+
+- É retornado um erro quando a solicitação e inválida ou parâmetros ausentes.
+
+### Repositório API:
+- [API de Endereços](https://github.com/WalaceLima/APICadastrodeEnderecoPOSFiap/tree/main/APICadastrodeEndereco).
 
 ### Repositório API:
 - [API de Endereços](https://github.com/WalaceLima/APICadastrodeEnderecoPOSFiap/tree/main/APICadastrodeEndereco).
